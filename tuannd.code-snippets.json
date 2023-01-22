@@ -1,0 +1,101 @@
+{
+  "const {...} = ...": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "dob-ZZ",
+    "body": ["const {$1} = $2$0"],
+    "description": "Destructing Object"
+  },
+  "const [...] = ...": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "dar-ZZ",
+    "body": ["const [$1] = $2$0"],
+    "description": "Destructing Array"
+  },
+  "(...) => {...}": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "fnn-ZZ",
+    "body": ["($1) => {$2}$0"],
+    "description": "Arrow Function"
+  },
+  "const ... = (...) => {...}": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "cfnn-ZZ",
+    "body": ["const ${1:name} = ($3) => {", "  $4", "}", "$0"],
+    "description": "Arrow Function"
+  },
+  "const ... = async (...) => {...}": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "cafnn-ZZ",
+    "body": ["const ${1:name} = async ($3) => {", "  $4", "}", "$0"],
+    "description": "Arrow Function"
+  },
+  // react JS
+  "useState()": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "useState-ZZ",
+    "body": ["const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2);$0"],
+    "description": "useState()"
+  },
+  "useEffect()": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "useEffect-ZZ",
+    "body": ["useEffect(() => {", "  $1", "}, [$2])", "$0"],
+    "description": "useEffect()"
+  },
+  "useContext()": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "useContext-ZZ",
+    "body": ["const {$1} = useContext($2)$0"],
+    "description": "useContext()"
+  },
+  "useReducer()": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "useReducer-ZZ",
+    "body": [
+      "const [${1:state}, ${2:dispatch}] = useReducer(${3:reducer}, ${4:initialState})$0"
+    ],
+    "description": "useReducer()"
+  },
+  "useCallback()": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "useCallback-ZZ",
+    "body": ["const $1 = useCallback(() => {", "  $2", "}, [$3])$0"],
+    "description": "useCallback()"
+  },
+  "useMemo()": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "useMemo-ZZ",
+    "body": ["const $1 = useMemo(() => $2, [$3])$0"],
+    "description": "useMemo()"
+  },
+  "useRef()": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "useRef-ZZ",
+    "body": ["const $1 = useRef($2)$0"],
+    "description": "useRef()"
+  },
+  "useDispatch()": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "useDispatch-ZZ",
+    "body": ["const ${1:dispatch} = useDispatch()$0"],
+    "description": "useDispatch()"
+  },
+  "useSelector()": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "useSelector-ZZ",
+    "body": ["const { $1 } = useSelector((store) => store.$2)$0"],
+    "description": "useSelector()"
+  },
+  "useNavigate()": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "useNavigate-ZZ",
+    "body": ["const ${1:navigate} = useNavigate()$0"],
+    "description": "useNavigate()"
+  },
+  "e.preventDefault()": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "preventDefault-ZZ",
+    "body": ["${1:e}.preventDefault()$0"],
+    "description": "e.preventDefault()"
+  }
+}

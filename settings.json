@@ -1,0 +1,45 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.colorCustomizations": {
+    "tab.activeBorder": "#ffffff",
+    "tab.hoverBorder": "#969685"
+  },
+  "files.autoSave": "off",
+  "files.trimTrailingWhitespace": true,
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.fontSize": 16,
+  // Editor
+  "editor.tabSize": 2,
+  "editor.fontSize": 16,
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.cursorBlinking": "expand",
+  "editor.guides.bracketPairs": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.cursorSmoothCaretAnimation": true, // code smooth
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.sortImports": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Emmet
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // Prettier
+  "prettier.semi": false, // them dau cham phay cuoi cau lenh
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  // Git
+  "git.enableSmartCommit": true,
+  // Markdown
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  // Other
+  "explorer.compactFolders": false
+}
